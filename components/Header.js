@@ -3,7 +3,7 @@ import { ethers, BigNumber } from "ethers";
 import streetsof from "../public/components/Streetsof.json";
 import Image from "next/image"
 
-const streetsofAddress = "0x593fd86bf37e91854534B4eE7d67dC6C0b094f26";
+const streetsofAddress = "0x619391Ef229e4E5bAA09Ed4c6Dc8d0D819D94438";
 
 const Header = ({ accounts, setAccounts }) => {
   const [mintAmount, setMintAmount] = useState(1);
