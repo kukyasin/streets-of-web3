@@ -64,7 +64,7 @@ const Navbar = ({ accounts, setAccounts }) => {
                             </a>
                             </div>
                             {/* Connect */}
-                            <div className="hidden md:block">
+                            <div className="md:block">
                                 {isConnected ? (
                                     <button className="bg-gradient-to-t from-saffron to-pink text-white text-2xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md">Connected Wallet</button>
                                 ) : (
