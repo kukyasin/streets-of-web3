@@ -54,23 +54,21 @@ const Navbar = ({ accounts, setAccounts }) => {
     return(
                 <div className="w-full max-w-1xl ">
                     <div className="relative flex items-center justify-between h-20 mx-0 max-w-1xl">
-                        <div className="items items-center mx-20 justify-between w-full text-center sm:flex lg:flex">
-                            <div className="flex justify-center items-center flex-shrink-0">
-                            <div className="flex justify-center space-x-12">
-                            {navigation.social.map((item) => (
-                                <a key={item.id} href={item.href} className="text-white font-helveticaLight hover:text-gray-500">
-                                    <span className="sr-only">{item.name}</span>
-                                    <item.icon className="h-12 w-12" aria-hidden="true" />
-                                </a>
-                            ))}
-                        </div>
+                        <div className="items items-center mx-10 sm:mx-80 md:mx-40 justify-between w-full text-center sm:flex lg:flex">
+                        <div className="flex justify-center sm:space-x-2 space-x-3">
+                            <a href="#collection"className="text-helveticaLightt sm:text-2xl text-xl mx-3 text-white hover:text-gray-300">
+                                The Collection
+                            </a>
+                            <a href="#artist" className="text-helveticaLight sm:text-2xl text-xl text-white hover:text-gray-300">
+                                The Artist
+                            </a>
                             </div>
                             {/* Connect */}
                             <div className="hidden md:block">
                                 {isConnected ? (
-                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-3xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md">Connected Wallet</button>
+                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-2xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md">Connected Wallet</button>
                                 ) : (
-                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-3xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md"
+                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-2xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md"
                                     onClick={connectAccount}>Connect Wallet</button>
                                 )}
                             </div>
