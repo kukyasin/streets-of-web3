@@ -51,18 +51,11 @@ const navigation = {
       <footer>
         <div className="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
         <div className="mt-8 flex justify-center space-x-12">
-        <Image
-            className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none justify-center"
-            src="/images/streets-of.png"
-            priority
-            width={327}
-            height={62}
-            alt=""
-        />
+          <h1 className='text-cream font-kelly text-5xl'>The Ether Slayer</h1>
         </div>
           <div className="mt-10 flex justify-center space-x-12">
           {navigation.social.map((item) => (
-              <a key={item.id} href={item.href} className="text-white font-helveticaLight hover:text-gray-500">
+              <a key={item.id} href={item.href} className="text-cream font-kelly hover:text-white">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-12 w-12" aria-hidden="true" />
               </a>
@@ -70,7 +63,7 @@ const navigation = {
           </div>
           <div>
           {navigation.footerText.map((item) => (
-          <p key={item.id} className="mt-8 text-center font-helveticaLight text-white font-justanotherhand text-xl sm:text-3xl">&copy; {item.text}</p>
+          <p key={item.id} className="mt-8 text-center font-kelly text-cream text-xl sm:text-3xl">&copy; {item.text}</p>
           ))}
           </div>
         </div>

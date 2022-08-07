@@ -53,22 +53,19 @@ const Navbar = ({ accounts, setAccounts }) => {
     }    
     return(
                 <div className="w-full max-w-1xl ">
-                    <div className="relative flex items-center justify-between h-20 mx-0 max-w-1xl">
+                    <div className="relative flex items-center justify-between h-36 sm:h-24 mx-0 max-w-1xl border-b-2 border-cream">
                         <div className="items items-center mx-10 sm:mx-80 md:mx-40 justify-between w-full text-center sm:flex lg:flex">
                         <div className="flex justify-center sm:space-x-2 space-x-3">
-                            <a href="#collection"className="text-helveticaLightt sm:text-2xl text-xl mx-3 text-white hover:text-gray-300">
-                                The Collection
-                            </a>
-                            <a href="#artist" className="text-helveticaLight sm:text-2xl text-xl text-white hover:text-gray-300">
-                                The Artist
+                            <a className="font-kelly sm:text-5xl text-4xl mx-3 text-cream hover:text-gray-300 mb-2 sm:mb-0">
+                                The Ether Slayer
                             </a>
                             </div>
                             {/* Connect */}
                             <div className="md:block">
                                 {isConnected ? (
-                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-2xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md">Connected Wallet</button>
+                                    <button className="bg-cream text-black text-3xl font-kelly inline-flex items-center px-5 py-2 shadow-sm rounded-md">Connected Wallet</button>
                                 ) : (
-                                    <button className="bg-gradient-to-t from-saffron to-pink text-white text-2xl font-helveticaLight inline-flex items-center px-5 py-2 shadow-sm rounded-md"
+                                    <button className="bg-cream text-black text-3xl font-kelly inline-flex items-center px-5 py-2 shadow-sm rounded-md"
                                     onClick={connectAccount}>Connect Wallet</button>
                                 )}
                             </div>

@@ -16,8 +16,8 @@ function App() {
       </Head>
       <Navbar accounts={accounts} setAccounts={setAccounts} />
       <Header accounts={accounts} setAccounts={setAccounts} />
-      <Images />
       <Details />
+      <Images />
       <Footer />
     </div>
   );

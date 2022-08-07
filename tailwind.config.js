@@ -10,12 +10,13 @@ module.exports = {
       gray: colors.gray,
       black: colors.black,
       white: colors.white,
+      'cream': '#FFC37B',
       'saffron': '#F5BD36',
       'pink': '#CE00A4',
     },
     extend: {
       fontFamily: {
-        helveticaLight: 'HelveticaNeue-Light',
+        kelly: 'KellySlab-Regular',
       },
       backgroundImage: {
         'details': "url('/images/details-bg.png')",
